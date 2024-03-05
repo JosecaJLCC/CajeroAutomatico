@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/style_index.css">
+</head>
+<body>
+    <div id="container">
+        <div id="formulario">
+          <!-- <form action="">  -->
+            <!-- Logo de la empresa -->  
+            <fieldset>
+              <legend>
+                <figure>
+                  <img id="logo" src="./assets/icons/vue.svg" alt="">
+                </figure>
+              </legend>
+                 
+              <!-- Nombre de la empresa -->
+              <h3 id="nombre"><strong>CAJERO AUTOMATICO</strong></h3>
+    
+              <!-- Seccion de datos de usuario -->
+              <!-- Input de usuarios -->
+              <section id="users">
+                <input id="user" class="entrada" type="text" placeholder="Username">
+                <img class="icons imguser" src="../assets/icons/perfil.png" alt="">
+              </section>
+              <!-- Input de contraseñas -->
+              <section id="passwords">
+                <input id="pass" class="entrada" type="password" placeholder="Password">
+                <img class="icons imgpass" src="../assets/icons/bloquear.png" alt="">
+              </section>
+    
+              <!-- Enlace de guardar para siempre la contraseña -->
+              <section id="remember">
+                <input type="checkbox"><p>Remember me</p>
+                
+              </section>
+    
+              <!-- Tiene que ocupar todo el ancho del contenedor en que esta -->
+              <button id="play">Ingresar</button>
+    
+              <!-- Otros enlaces -->
+              <strong><a href="cajero.html">Forgot Password?</a> </strong> 
+              <p>Don't have an acount? <strong><a href="#">Register</a></strong></p>
+            </fieldset>
+          <!-- </form> -->
+        </div>
+        
+      </div>
+
+      <script src="./scripts/script_index.js"></script>
+</body>
+</html>

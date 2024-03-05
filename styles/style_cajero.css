@@ -1,0 +1,57 @@
+/* Este es el contenedor principal */ 
+#container{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    /* align-content: center; */
+    align-items: center;
+    justify-content: center;
+    /* background: linear-gradient(to bottom left, #455A64 30%, #fc5204 100%); */
+    background: linear-gradient(180deg, #00154F, #fc5204);
+    /* border: 3px solid yellow; */
+    color:white;
+    
+
+  }
+
+  fieldset{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    
+    min-width: 300px;
+    margin-top:10px;
+    margin-bottom: -50px;
+    /* opacity: 0.8; */
+    background-color: #00154F;
+    box-shadow: 2px 2px 10px 10px rgba(0, 0, 0, 0.2);
+
+    /* Este background divide el fondo pantalla en diferentes porcentajes que quieras */
+    /* background: linear-gradient(to bottom left, #00154F 50%, white 50%); */
+    border: 3px solid white;
+    /* border: 15px solid transparent;
+    border-image: linear-gradient(to right, #ffbb02, #f7df05) 1; */
+  }
+
+  button{
+    width:50%;
+    background-color: #455A64;
+    border:none;
+
+    border-radius: 8px;
+    
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;    
+    cursor: pointer;
+  }
+
+  button:hover{
+    background: linear-gradient(180deg, #455A64, #fc5204);
+  }
+
+  #cerrar{
+    background-color: red;
+  }

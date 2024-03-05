@@ -1,0 +1,237 @@
+/* Este es el contenedor principal */ 
+#container{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    /* align-content: center; */
+    align-items: center;
+    justify-content: center;
+    /* background: linear-gradient(to bottom left, #455A64 30%, #fc5204 100%); */
+    background: linear-gradient(180deg, #00154F, #fc5204);
+    /* border: 3px solid yellow; */
+    color:white;
+    
+
+  }
+
+  /* Es el segundo contenedor */
+  #formulario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    background: none;
+    /* background: linear-gradient(to bottom left, #fc5204 50%, #455A64 50%); */
+    min-width: 350px;
+    /* border: 3px solid #00154F;   */
+  }
+
+  /* Este es el nombre de nuestro empresa */
+  #nombre{
+    margin:0px;
+  }
+
+  /* Es la parte dentro del #formulario pero que contiene todo */
+  fieldset{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    
+    min-width: 300px;
+    margin-top:10px;
+    margin-bottom: -50px;
+    /* opacity: 0.8; */
+    background-color: #00154F;
+    box-shadow: 2px 2px 10px 10px rgba(0, 0, 0, 0.2);
+
+    /* Este background divide el fondo pantalla en diferentes porcentajes que quieras */
+    /* background: linear-gradient(to bottom left, #00154F 50%, white 50%); */
+    border: 3px solid white;
+    /* border: 15px solid transparent;
+    border-image: linear-gradient(to right, #ffbb02, #f7df05) 1; */
+  }
+
+
+/* Es el contenedor de nuestro logo en la parte superior */
+  legend{
+    background-color: white;
+    border-radius: 50%;
+    /* border: 3px solid white; */
+    padding: 0px;
+    width:100px ;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  
+
+
+   /* Referencia al tamaño de nuestro logo */
+   #logo{
+    width: 70px;
+    height: 70px;
+    padding: 5px;
+   
+    
+    /* outline:5px solid red ;
+    border: 3px solid aqua; */
+
+  }
+
+/* Etiqueta Form */
+  #formulario form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    
+  }
+
+  /* Referencia al icono que esta dentro de los inputs */
+  .icons{
+    width: 15px;
+    height: 15px;
+  }
+
+  /* Entrada se refiere a ambas etiquetas input */
+  .entrada{
+    
+    border-bottom: 3px solid white;
+    margin: 10px;
+    width: 100%;
+    height: 25px;
+    padding: 5px 25px 5px 10px;
+
+  }
+
+  /* Contiene a nuestro input de usuario y su logo */
+  #users{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  /* Es el input usuario */
+  #users #user{
+    background: none; 
+    border:none;
+    border-bottom: 2px solid white;
+    /* border-bottom:2px solid white; */
+  }
+
+  /* Es la pseudoetiqueta de la etiqueta input*/
+  ::placeholder {
+    color: white;
+    font-size: 15px;
+  }
+
+  
+  #users #user:hover{
+    border-bottom: 2px solid white;
+    
+
+  }
+
+  
+
+  #users #user:focus{
+    outline: none;
+    
+  }
+
+  /* Contiene a nuestro input de contraseña y su logo */
+  #passwords{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  /* Es el input contrasenia */
+  #passwords #pass{
+    background: none; 
+    border:none;
+    border-bottom: 2px solid white;
+    /* border-bottom:2px solid white; */
+  }
+
+  #passwords #pass:hover{
+    border-bottom: 2px solid white;
+  }
+
+  #passwords #pass:focus{
+    outline: none;
+  }
+
+  /* Es el logo contenido en el input de usuario */
+  #users .imguser{
+    position: absolute;
+    right:20px;
+  }
+/* Es el logo contenido en el input de contrasenia */
+  #passwords .imgpass{
+    position: absolute;
+    right:20px;
+  }
+
+  /* Es nuestro boton */
+  #play{
+    width:50%;
+    background-color: #455A64;
+    border:none;
+
+    border-radius: 8px;
+    
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;    
+    cursor: pointer;
+  }
+
+  #play:hover{
+    background: linear-gradient(180deg, #455A64, #fc5204);
+  }
+
+  #remember{  
+    margin:none; 
+    display: flex;
+    flex-direction:row;
+  }
+
+  body{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    box-sizing: border-box;  
+    padding: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0px;
+  }  
+
+  a {
+      font-weight: 500;
+      color: white;
+    text-decoration: none;
+    }
+    a:hover {
+      /* border-bottom:2px solid #535bf2; */
+      text-decoration: underline;
+    }
+
+    input{
+      color:white;
+    }
+
+    
+
+    
+   
+    
+    
+  
